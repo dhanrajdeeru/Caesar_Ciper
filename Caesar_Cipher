@@ -1,0 +1,29 @@
+string = input('Enter a message : ')
+var=[]
+# print(type(var))
+# encrypting the message
+for i in string:
+    # ord() is used to convert string to ascci value of a number
+    v = (ord(i)) + 3
+    var.append(v)
+print('\n String after encrypting : \n')
+for i in var:
+    # chr() is used to convert ascci value of a number to string
+    x = chr(i)
+    print(x,end="")
+print('\n String after decrypting : \n')
+# decrytping the message
+for i in var:
+    y = chr (i - 3 )
+    print(y,end="")
+    
+    Output:
+    
+  Enter a message : Is your number xxxxxx1234?
+
+ String after encrypting : 
+
+Lv#|rxu#qxpehu#{{{{{{4567B
+ String after decrypting : 
+
+Is your number xxxxxx1234?
